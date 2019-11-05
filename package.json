@@ -1,0 +1,26 @@
+{
+  "name": "express-full-crud-exercise",
+  "version": "1.0.0",
+  "description": "Your going to build a full stack CRUD application for creating, reading, updating, and deleting characters from your favorite book, TV show, or movie. This exercise will have two parts:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/bgrzybowski29/express-full-crud-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4",
+    "pg": "^7.12.1",
+    "sequelize": "^5.21.2"
+  }
+}

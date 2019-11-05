@@ -1,0 +1,339 @@
+
+html,
+body,
+.app {
+  height: 100vh; 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p {
+  margin-bottom: 1em;
+}
+body {
+  margin: 0;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  flex-shrink: 0;
+  display: grid;
+  display: inline-flex;
+  background-image: url('brazil-1.jpeg');
+  right:0;
+  left:0;
+  margin-top: 0;
+}
+nav{
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+nav a{
+  color: black;
+  text-decoration: none;
+}
+header h1{
+  width: 100vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 4em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#about{
+  color: #FDF7E7;
+}
+.form{
+  /* background-image: url('parchment-background.jpg'); */
+  height: 440px;
+  margin-top: 10%;
+  width: 400px;
+  border-radius: 6%;
+  display: flex;
+  flex-direction: column;
+}
+.form label{
+  margin: 10px 10px 10px 20px;
+}
+.form input{
+  margin: 0px 10px 10px 20px;
+  height:20px;
+  width:350px;
+}
+.form button{
+  margin: 10px 10px 10px 20px;
+  height:40px;
+  width:350px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main {
+  flex: 1 1 auto;
+  position: relative;
+  display: flex;
+  background: url('brazil-2.jpeg') no-repeat center center fixed;
+  /* background: url(images/bg.jpg) no-repeat center center fixed;  */
+  background-size: cover;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.character-main{
+  margin: 20px 20px 20px 20px;
+    width: 325px;
+    height: 400px;
+    background-color: rgb(240, 240, 217);
+    /* background-image: url('leaves-1.jpeg'); */
+    opacity: .7;
+    background-repeat: no-repeat;
+    background-size: 325px 400px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.character-main h2{
+ text-align: center;
+ margin-bottom: 2px;
+ margin-top: 5px;
+ width: 80%;
+}
+.character-main img{
+height: 200px;
+width: 200px;
+object-fit: cover;
+}
+#character-profile{
+color: #FDF7E7;
+background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+    justify-content: center;
+
+  width: 100%;
+  padding-left: 20px;
+}
+#character-profile button{
+  width: 80px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info{
+width: 600px;
+}
+  footer { 
+  flex: 0 0 auto;
+  /* background-image: url('parchment-background.jpg'); */
+  text-align: center;
+}
+.image-footer{
+  width: 50px;
+  height: 50px;
+}
+#copyright{
+  text-align: center;
+  color: black;
+}
+
+
+/* ********* Form *********** */
+
+.contact {
+  background: url("brazil-1.jpeg") no-repeat center center fixed;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  margin:0 !important;
+  align-self: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 3em;
+  animation: contact;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+}
+
+@keyframes contact {
+  0%   {transform: translatey(-500px);}
+  100% {transform: translatey(0);}
+}
+
+form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 400px;
+  margin-top: 75px;
+}
+
+#name {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255, 255, 255, .3);
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  align-self: center;
+  border: none;
+  width: 30%;
+  height: 2em;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, .5);
+  transition: ease-in 150ms;
+  animation: name;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+}
+
+@keyframes name {
+  0%   {transform: translatex(-1000px);}
+  100% {transform: translatex(0);}
+}
+
+#name:hover {
+  background-color: rgba(255, 255, 255, .80);
+}
+
+#name:focus {
+  background-color: rgba(0, 0, 0, .4);
+  color: #ffffff;
+}
+
+#email {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255, 255, 255, .3);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: start;
+  border: none;
+  width: 30%;
+  height: 2em;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, .5);
+  transition: ease-in 150ms;
+  animation: email;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+}
+
+@keyframes email {
+  0%   {transform: translatex(-1000px);}
+  100% {transform: translatex(0);}
+}
+
+#email:hover {
+  background-color: rgba(255, 255, 255, .80);
+}
+
+#email:focus {
+  background-color: rgba(0, 0, 0, .4);
+  color: #ffffff;
+}
+
+#message {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255, 255, 255, .3);
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: center;
+  align-self: center;
+  border: none;
+  width: 30%;
+  height: 10em;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, .5);
+  transition: ease-in 150ms;
+  animation: message;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+}
+
+@keyframes message {
+  0%   {transform: translatex(-1000px);}
+  100% {transform: translatex(0);}
+}
+
+#message:hover {
+  background-color: rgba(255, 255, 255, .80);
+}
+
+#message:focus {
+  background-color: rgba(0, 0, 0, .4);
+  color: #ffffff;
+}
+
+#submit {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255, 255, 255, .3);
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: center;
+  align-self: center;
+  border: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, .5);
+  transition: ease-in 150ms;
+  animation: submit;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+}
+
+@keyframes submit {
+  0%   {transform: translatex(-1000px);}
+  100% {transform: translatex(0);}
+}
+
+#submit:hover {
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, .70);
+}
+
+/* ***** button ****** */
+
+
+button {
+  margin: auto;
+  cursor: pointer;
+  font-size: 30px;
+  height: 70px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 5px solid black;
+}
+
+
+@media only screen 
+  and (max-width: 500px){
+   
+    #main { 
+      background-size: 100% 100%;
+      justify-content: flex-start;
+    }
+  }
